@@ -3,44 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Item Entry App</title>
+  <title>Order Management</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="section">
-    <h1>Item Entry</h1>
-    
-    <div id="items-container">
-      <!-- Items will be added by JavaScript -->
+  <div class="container">
+    <!-- Side Panel with Tabs -->
+    <div class="side-panel">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="order-splitter">Order Splitter</button>
+        <button class="tab-btn" data-tab="order-aggregator">Order Aggregator</button>
+      </div>
     </div>
-    
-    <button id="add-item-btn">Add New Item</button>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Order Splitter Tab Content -->
+      <div class="tab-content active" id="order-splitter">
+        <div class="section">
+          <h1>Item Entry</h1>
+          <div id="items-container">
+            <!-- Items will be added by JavaScript -->
+          </div>
+          <button id="add-item-btn">Add New Item</button>
+        </div>
+
+        <hr class="separator">
+
+        <div class="section">
+          <h1>People Entry</h1>
+          <div id="people-container">
+            <!-- People will be added by JavaScript -->
+          </div>
+          <button id="add-person-btn">Add New Person</button>
+        </div>
+
+        <hr class="separator">
+
+        <div class="section">
+          <h1>Payment Summary</h1>
+          <button id="calculate-btn">Calculate Totals</button>
+          <div id="summary-container">
+            <!-- Summary will be added by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Aggregator Tab Content -->
+      <div class="tab-content" id="order-aggregator">
+        <h1>Order Aggregator</h1>
+        <!-- Add Order Aggregator content here -->
+      </div>
+    </div>
   </div>
 
-  <hr class="separator">
-
-  <div class="section">
-    <h1>People Entry</h1>
-    
-    <div id="people-container">
-      <!-- People will be added by JavaScript -->
-    </div>
-    
-    <button id="add-person-btn">Add New Person</button>
-  </div>
-
-  <hr class="separator">
-
-  <div class="section">
-    <h1>Payment Summary</h1>
-    
-    <button id="calculate-btn">Calculate Totals</button>
-    
-    <div id="summary-container">
-      <!-- Summary will be added by JavaScript -->
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
