@@ -193,10 +193,10 @@ button:hover {
 }
 
 .side-panel {
-  width: 200px;
+  width: 100px;
   background-color: #f0f0f0;
   padding: 20px;
-  border-right: 1px solid #ddd;
+  border-right: 2px solid #ddd;
 }
 
 .tabs {
@@ -208,17 +208,17 @@ button:hover {
 .tab-btn {
   padding: 10px;
   border: none;
-  background: #f0f0f0;
+  background: #6d6d6d;
   cursor: pointer;
   text-align: left;
-  font-size: 16px;
-  width: 100%;
+  font-size: 10px;
+  width: 120%;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .tab-btn:hover {
-  background-color: #e0e0e0;
+  background-color: #6d6d6d;
 }
 
 .tab-btn.active {
