@@ -196,6 +196,7 @@ button:hover {
   width: 100px;
   background-color: #f0f0f0;
   padding: 20px;
+  padding-left: 10px;
   border-right: 2px solid #ddd;
 }
 
@@ -210,7 +211,7 @@ button:hover {
   border: none;
   background: #6d6d6d;
   cursor: pointer;
-  text-align: left;
+  text-align: center;
   font-size: 10px;
   width: 120%;
   border-radius: 4px;
@@ -224,7 +225,6 @@ button:hover {
 .tab-btn.active {
   background-color: #007bff;
   color: white;
-  font-weight: bold;
 }
 
 .main-content {
